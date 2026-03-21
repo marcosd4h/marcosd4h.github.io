@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{%- assign articles = site.articles | sort: "date" | reverse -%}
+
+<section class="home-intro">
+  <h1>{{ site.name | default: site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+<h2 class="home-section-title">Blog</h2>
+
+<ul>
+  {%- for entry in articles -%}
+    <li class="post-list-item">
+      <span class="home-date">{{ entry.date | date: site.theme_config.date_format }}&raquo;</span>
+      <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
+    </li>
+  {%- else -%}
+    <li>No posts yet.</li>
+  {%- endfor -%}
+</ul>

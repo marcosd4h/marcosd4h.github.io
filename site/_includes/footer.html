@@ -1,0 +1,13 @@
+{%- unless page.url == '/about/' -%}
+  <footer class="site-footer-nav">
+    <div class="dashed"></div>
+    <nav>
+      <ul class="horizontal-list">
+        <li>
+          <a class="nav-link" href="{{ '/about/' | relative_url }}">about</a>
+          &nbsp;&nbsp;
+        </li>
+      </ul>
+    </nav>
+  </footer>
+{%- endunless -%}

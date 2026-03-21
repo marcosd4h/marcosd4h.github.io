@@ -1,0 +1,140 @@
+---
+---
+
+@import "moonwalk";
+@import "list";
+@import "syntax";
+
+body {
+  min-height: 100vh;
+}
+
+.page-content {
+  min-height: 100vh;
+}
+
+.page-shell {
+  width: min(60vw, 1400px);
+  max-width: none;
+  margin: 0 auto;
+  padding: 4em 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 8em);
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: var(--headings);
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.home-intro h1 {
+  margin-bottom: 0.4rem;
+}
+
+.home-intro p {
+  margin-top: 0;
+  max-width: 44rem;
+}
+
+.home-section-title {
+  margin-top: 1.5rem;
+}
+
+.post-list-item {
+  margin: 0.65rem 0;
+}
+
+.post-list-item a {
+  text-decoration: none;
+}
+
+.post-shell .back-link {
+  text-decoration: none;
+}
+
+.post-shell .post-title {
+  margin-top: 0.6rem;
+  margin-bottom: -1rem;
+}
+
+pre,
+code,
+pre code,
+div.highlighter-rouge pre code,
+pre code.highlighter-rouge {
+  line-height: 1.35;
+}
+
+.highlight .w,
+.highlighter-rouge .w {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer-nav {
+  margin-top: auto;
+  padding-top: 3rem;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+}
+
+.post-figure {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.post-figure img {
+  margin: 0 auto;
+}
+
+.post-figure figcaption {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+table {
+  table-layout: fixed;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+  width: 22%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 39%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 39%;
+}
+
+table th,
+table td {
+  vertical-align: top;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 900px) {
+  .page-shell {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+}

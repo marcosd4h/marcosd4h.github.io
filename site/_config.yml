@@ -1,0 +1,27 @@
+title: Marcosd4h on Binaries
+name: Marcosd4h on Binaries
+description: Notes on vulnerability research, reverse engineering, and Windows internals.
+url: "https://marcosd4h.github.io"
+baseurl: ""
+lang: en
+permalink: pretty
+markdown: kramdown
+google_analytics_id: G-CCVVL8DEPT
+theme_config:
+  appearance: "dark"
+  date_format: "%Y-%m-%d"
+  back_home_text: "<- blog"
+plugins:
+  - jekyll-feed
+collections:
+  articles:
+    output: true
+    permalink: /:name/
+defaults:
+  -
+    scope:
+      path: ""
+      type: articles
+    values:
+      layout: post
+

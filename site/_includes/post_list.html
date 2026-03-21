@@ -1,0 +1,11 @@
+{%- assign entries = include.collection | default: site.articles | sort: "date" | reverse -%}
+{%- if entries.size > 0 -%}
+  <ul>
+    {%- for post in entries -%}
+      <li class="post-list-item">
+        <span class="home-date">{{ post.date | date: site.theme_config.date_format }}&raquo;</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}

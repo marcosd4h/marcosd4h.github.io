@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "dark" }}">
+  {%- include head.html -%}
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="page-shell">
+        {{ content }}
+        {%- include footer.html -%}
+      </div>
+    </main>
+  </body>
+</html>
